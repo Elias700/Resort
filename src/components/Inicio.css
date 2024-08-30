@@ -1,30 +1,29 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-li{
-    font-family: "Nerko One", cursive ;
+li {
+    font-family: "Nerko One", cursive;
     font-size: 25px;
 }
 
-.icone{
+.icone {
     color: rgb(216, 44, 9);
 }
 
 /* -------------------------------- */
 
-.background{
+.background {
     background-image: url(../img/resort1.jpg);
     background-size: cover;
     height: 513px;
 }
 
-.title{
+.title {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 35px;
@@ -32,7 +31,7 @@ li{
     top: 25px;
 }
 
-.p1{
+.p1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     position: relative;
@@ -40,60 +39,63 @@ li{
     text-align: center;
 }
 
-select{
+select {
     position: relative;
     top: 50px;
     padding: 15px 130px;
 }
 
-.formulario{
+.formulario {
     text-align: center;
     position: relative;
     top: 30px;
 }
 
-.btn1{
-
-}
+.btn1 {}
 
 
+/* MOBILE */
+@media (max-width: 480px) {
 
-@media (max-width: 480px){
-
-    .navegacao ul{
+    /* HEADER */
+    .navegacao ul {
         text-align: center;
         background: #000000;
         padding: 15px 0;
     }
 
-    .icone{
+    .icone {
         color: rgb(235, 118, 8);
         font-size: 40px;
     }
 
-    li{
+    li {
         font-size: 22px;
         color: rgb(235, 118, 8);
     }
 
+    li:hover{
+        color: rgb(157, 86, 21);
+    }
+
     /* ---------------------- */
 
-    .background{
+    .background {
         background-image: url(../img/resort1.jpg);
         background-size: cover;
         height: 513px;
     }
 
-    .titulo{
+    .titulo {
         font-size: 55px;
         text-align: center;
         position: relative;
         top: 20px;
-        font-family:  "Nerko One", cursive;
+        font-family: "Nerko One", cursive;
         text-shadow: 2px 2px rgb(235, 118, 8);
     }
-    
-    .title{
+
+    .title {
         text-align: center;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 30px;
@@ -101,8 +103,8 @@ select{
         top: 55px;
         text-shadow: 2px 2px #000;
     }
-    
-    .p1{
+
+    .p1 {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 20px;
         position: relative;
@@ -111,24 +113,24 @@ select{
         color: rgb(235, 118, 8);
         text-shadow: 2px 2px #000;
     }
-    
-    select{
+
+    select {
         position: relative;
         top: 50px;
         padding: 15px 130px;
     }
-    
-    .formulario{
+
+    .formulario {
         text-align: center;
         position: relative;
         top: 70px;
     }
 
-    option{
+    option {
         font-size: 20px;
     }
-    
-    .btn1{
+
+    .btn1 {
         position: relative;
         top: 75px;
         cursor: pointer;
@@ -142,21 +144,21 @@ select{
 
     /* Conheça mais Resorts */
 
-    .fundo{
+    .fundo {
         background: #000;
         height: 400vh;
     }
 
-    h2{
+    h2 {
         font-size: 30px;
-        font-family: "Nerko One", cursive ;
+        font-family: "Nerko One", cursive;
         text-align: center;
         position: relative;
         top: 20px;
         color: rgb(235, 118, 8);
     }
 
-    .imgResorts{
+    .imgResorts {
         height: 300px;
         width: 400px;
         position: relative;
@@ -168,16 +170,16 @@ select{
 
     /* Footer */
 
-    .rodaPe{
+    .rodaPe {
         height: 40vh;
         background: rgb(235, 118, 8);
     }
 
-    .titleFooter{
+    .titleFooter {
         color: #000;
     }
 
-    .p2{
+    .p2 {
         font-family: Arial, Helvetica, sans-serif;
         position: relative;
         top: 30px;
@@ -185,7 +187,7 @@ select{
         padding: 5px 15px;
     }
 
-    .redesSociais{
+    .redesSociais {
         display: flex;
         justify-content: center;
         position: relative;
@@ -193,13 +195,178 @@ select{
         gap: 15px;
     }
 
-    .icones{
+    .icones {
         font-size: 30px;
         cursor: pointer;
     }
 
-    .icones:hover{
+    .icones:hover {
         color: rgba(210, 105, 30, 0.769);
     }
-    
+
+}
+
+
+
+/* TABLET */
+@media (max-width: 768px) {
+
+    /* header  */
+    .navegacao ul {
+      display: flex;
+      justify-content: end;
+      gap: 20px;
+      align-items: center;
+      position: relative;
+      right: 50px;
+    }
+
+    .navegacao{
+        background: #000;
+    }
+
+    li {
+        color: rgb(235, 118, 8);
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    li:hover{
+        color: rgb(157, 86, 21);;
+    }
+
+    .iconeConfiguracao{
+        margin-right: 350px;
+        padding: 10px;
+        position: relative;
+    }
+
+    .icone{
+        font-size: 35px;
+        color: rgb(235, 118, 8);
+    }
+
+    /* section */
+
+    .background{
+        height: 65vh;
+    }
+
+    .titulo{
+        text-align: center;
+        position: relative;
+        top: 20px;
+        font-family: "Nerko One", cursive;
+        text-shadow: 2px 2px rgb(235, 118, 8);
+        font-size: 60px;
+    }
+
+    .title {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        text-shadow: 2px 2px rgb(235, 118, 8);
+    }
+
+    .p1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        text-align: center;
+        color: #000;
+        text-shadow: 2px 2px rgb(235, 118, 8);
+        font-weight: 500;
+    }
+
+    select {
+        padding: 10px 50px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .formulario {
+        text-align: center;
+        position: relative;
+        top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    option {
+        font-size: 20px;
+    }
+
+    .btn1 {
+        position: relative;
+        top: 130px;
+        left: 250px;
+        cursor: pointer;
+        padding: 10px 50px;
+        border-radius: 5px;
+        background: rgb(235, 118, 8);
+        font-size: 20px;
+        border: none;
+        
+    }
+
+    /* ---------- */
+
+    .fundo{
+        background: #000;
+        height: 580vh;
+    }
+
+    h2{
+        font-size: 40px;
+        font-family: "Nerko One", cursive;
+        text-align: center;
+        position: relative;
+        top: 20px;
+        color: rgb(235, 118, 8);
+    }
+
+    .imgResorts{
+        height: 450px;
+        width: 700px;
+        position: relative;
+        left: 38px;
+        top: 30px;
+        margin-top: 20px;
+    }
+
+    /* roda pe */
+
+    .rodaPe {
+        height: 40vh;
+        background: rgb(235, 118, 8);
+    }
+
+    .titleFooter {
+        color: #000;
+    }
+
+    .p2 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        position: relative;
+        top: 30px;
+        text-align: center;
+        padding: 5px 15px;
+    }
+
+    .redesSociais {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 55px;
+        gap: 15px;
+    }
+
+    .icones {
+        font-size: 40px;
+        cursor: pointer;
+    }
+
+    .icones:hover {
+        color: rgba(210, 105, 30, 0.769);
+    }
 }

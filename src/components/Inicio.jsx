@@ -5,7 +5,6 @@ import './Inicio.css'
 import { TbBeach } from "react-icons/tb";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
-import { CgMail } from "react-icons/cg";
 import { FaLinkedin } from "react-icons/fa";
 
 
@@ -29,7 +28,9 @@ const Inicio = () => {
         <header >
             <nav className='navegacao'>
                 <ul>
-                    <TbBeach className='icone'/>
+                    <div className="iconeConfiguracao">
+                        <TbBeach className='icone'/>
+                    </div>
                     <li>Login</li>
                     <li>Contato</li>
                     <li>Sobre Nós</li>
@@ -51,10 +52,8 @@ const Inicio = () => {
                         <option value="">Rio de Janeiro</option>
                         <option value="">Santa Catarina</option>
                     </select>
-            
-                    <button className='btn1'>Pesquisar Resorts</button>
-
                 </form>
+                <button className='btn1'>Pesquisar Resorts</button>
             </div>
         </section>
 
