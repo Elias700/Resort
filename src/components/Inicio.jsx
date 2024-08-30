@@ -11,10 +11,10 @@ import { FaLinkedin } from "react-icons/fa";
 const Inicio = () => {
 
     const resorts = [
-        {id: 1, img: 'https://img.freepik.com/fotos-gratis/uma-festa-na-piscina-em-um-paraiso-tropical-rodeado-de-areia-de-palmeiras-e-um-ambiente-descontraido-de-ilha_1268-31087.jpg?t=st=1724783455~exp=1724787055~hmac=c41ef9a382082a5dac82ff8d732e45f9193ffc9218112d326a6bca693635a706&w=1480'},
-        {id: 2, img: 'https://img.freepik.com/fotos-gratis/redes-com-palmeiras_1203-201.jpg?t=st=1724776456~exp=1724780056~hmac=21d6fdfadc5f6e4bdde3400cd0e71eca222f4e82243023ddd796179f03a97915&w=1380'},
+        {id: 1, img: 'https://images.pexels.com/photos/163864/santorini-oia-greece-travel-163864.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'},
+        {id: 2, img: 'https://images.pexels.com/photos/1134176/pexels-photo-1134176.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'},
         {id: 3, img: 'https://img.freepik.com/fotos-gratis/piscina_74190-2104.jpg?t=st=1724783946~exp=1724787546~hmac=f7ebbed43c904d1cde48e4094bbd6556bc05935fbafe3ff75f600dc8649eb6e0&w=1380'},
-        {id: 4, img: 'https://img.freepik.com/fotos-gratis/tipo-complexo-de-entretenimento-o-popular-resort-com-piscinas-e-parques-aquaticos-na-turquia-com-mais-de-5-milhoes-de-visitantes-por-ano-hotel-de-luxo-amara-dolce-vita-recorrer-tekirova-kemer_146671-18728.jpg?t=st=1724783989~exp=1724787589~hmac=f8e05eff32c14b4ce0551967838b56b1b6769f3755793faf6d5678e86e26652f&w=1380'},
+        {id: 4, img: 'https://images.pexels.com/photos/1488515/pexels-photo-1488515.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'},
         {id: 5, img: 'https://img.freepik.com/fotos-gratis/tipo-complexo-de-entretenimento-o-popular-resort-com-piscinas-e-parques-aquaticos-na-turquia-com-mais-de-5-milhoes-de-visitantes-por-ano-hotel-de-luxo-amara-dolce-vita-recorrer-tekirova-kemer_146671-18728.jpg?t=st=1724783989~exp=1724787589~hmac=f8e05eff32c14b4ce0551967838b56b1b6769f3755793faf6d5678e86e26652f&w=1380'},
         {id: 6, img: 'https://img.freepik.com/fotos-gratis/sky-palm-lazer-paraiso-de-viagens_1203-4503.jpg?uid=R145372004&ga=GA1.1.1549449650.1701212212&semt=ais_hybrid'},
         {id: 7, img: 'https://img.freepik.com/fotos-gratis/bela-praia-tropical-e-mar-com-guarda-chuva-e-cadeira-ao-redor-da-piscina_74190-1071.jpg?t=st=1724784063~exp=1724787663~hmac=af3a43f8409dc89ea1426b93f47eb56a82b189f052185845c5833f2679dadb35&w=1380'},
@@ -60,9 +60,11 @@ const Inicio = () => {
         <main>
             <section className='fundo'>
                 <h2>Conheça mais Resorts</h2>
-                {resorts.map((resort) => (
-                    <img className='imgResorts' key={resort.id} src={resort.img} alt="Resort" />
-                ))}
+                <div className="imgConfiguracoes">
+                    {resorts.map((resort) => (
+                        <img className='imgResorts' key={resort.id} src={resort.img} alt="Resort" />
+                    ))}
+                </div>
             </section>
         </main>
 
