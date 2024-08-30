@@ -1,0 +1,205 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li{
+    font-family: "Nerko One", cursive ;
+    font-size: 25px;
+}
+
+.icone{
+    color: rgb(216, 44, 9);
+}
+
+/* -------------------------------- */
+
+.background{
+    background-image: url(../img/resort1.jpg);
+    background-size: cover;
+    height: 513px;
+}
+
+.title{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    position: relative;
+    top: 25px;
+}
+
+.p1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    position: relative;
+    top: 45px;
+    text-align: center;
+}
+
+select{
+    position: relative;
+    top: 50px;
+    padding: 15px 130px;
+}
+
+.formulario{
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+.btn1{
+
+}
+
+
+
+@media (max-width: 480px){
+
+    .navegacao ul{
+        text-align: center;
+        background: #000000;
+        padding: 15px 0;
+    }
+
+    .icone{
+        color: rgb(235, 118, 8);
+        font-size: 40px;
+    }
+
+    li{
+        font-size: 22px;
+        color: rgb(235, 118, 8);
+    }
+
+    /* ---------------------- */
+
+    .background{
+        background-image: url(../img/resort1.jpg);
+        background-size: cover;
+        height: 513px;
+    }
+
+    .titulo{
+        font-size: 55px;
+        text-align: center;
+        position: relative;
+        top: 20px;
+        font-family:  "Nerko One", cursive;
+        text-shadow: 2px 2px rgb(235, 118, 8);
+    }
+    
+    .title{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        position: relative;
+        top: 55px;
+        text-shadow: 2px 2px #000;
+    }
+    
+    .p1{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        position: relative;
+        top: 70px;
+        text-align: center;
+        color: rgb(235, 118, 8);
+        text-shadow: 2px 2px #000;
+    }
+    
+    select{
+        position: relative;
+        top: 50px;
+        padding: 15px 130px;
+    }
+    
+    .formulario{
+        text-align: center;
+        position: relative;
+        top: 70px;
+    }
+
+    option{
+        font-size: 20px;
+    }
+    
+    .btn1{
+        position: relative;
+        top: 75px;
+        cursor: pointer;
+        padding: 15px 110px;
+        border-radius: 5px;
+        background: rgb(235, 118, 8);
+        font-size: 20px;
+        border: none;
+    }
+
+
+    /* Conheça mais Resorts */
+
+    .fundo{
+        background: #000;
+        height: 400vh;
+    }
+
+    h2{
+        font-size: 30px;
+        font-family: "Nerko One", cursive ;
+        text-align: center;
+        position: relative;
+        top: 20px;
+        color: rgb(235, 118, 8);
+    }
+
+    .imgResorts{
+        height: 300px;
+        width: 400px;
+        position: relative;
+        left: 40px;
+        top: 30px;
+        margin-top: 15px;
+        cursor: pointer;
+    }
+
+    /* Footer */
+
+    .rodaPe{
+        height: 40vh;
+        background: rgb(235, 118, 8);
+    }
+
+    .titleFooter{
+        color: #000;
+    }
+
+    .p2{
+        font-family: Arial, Helvetica, sans-serif;
+        position: relative;
+        top: 30px;
+        text-align: center;
+        padding: 5px 15px;
+    }
+
+    .redesSociais{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 55px;
+        gap: 15px;
+    }
+
+    .icones{
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .icones:hover{
+        color: rgba(210, 105, 30, 0.769);
+    }
+    
+}
